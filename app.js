@@ -11,8 +11,15 @@ app.use(logger("dev"));
 app.use(jsonParser());
 
 var mongoose = require("mongoose");
+var db = require('./db.js');
 
-mongoose.connect("mongodb://localhost:27017/qa");
+mongoose.connect(db, function (error) {
+    if (error) {
+    	console.error(error);
+    } else {
+    	console.log('mongo connected');
+    }
+});
 
 var db = mongoose.connection;
 
