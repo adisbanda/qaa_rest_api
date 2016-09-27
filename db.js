@@ -1,1 +1,2 @@
-module.exports = 'mongodb://heroku_ttgltjs8:nlv62emnc5fjfqpaoi2pksds5f@ds035006.mlab.com:35006/heroku_ttgltjs8'; 
+module.exports = ''; 
+// This is user specific. To get your own URL for this, run 'heroku config' in your command line.
